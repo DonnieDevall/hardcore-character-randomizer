@@ -1,8 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-import RaceList from '../processing/RaceList';
-import ClassList from '../processing/ClassList';
-import CharacterGeneratorButton from '../processing/CharacterGeneratorButton';
+import RaceList from './RaceList';
+import ClassList from './ClassList';
 import '../display/CharacterOptions.css';
 
 
@@ -43,19 +42,18 @@ function CharacterOptions() {
     }
 
     return (
-        <div className='main-body'>
-            <h2>Pick which races and classes you would like to include</h2>
-            
-            <h2>Races</h2>
-            <button className="button" onClick={toggleClearRaces}>Select/Clear All</button>
-            <RaceList selectedRaces={selectedRaces} clickHandler={raceSelector} />
+        <div>
+            <div className='main-body'>
+                <h2>Pick which races and classes you would like to include</h2>
+                
+                <h2>Races</h2>
+                <button className="button noselect" onClick={toggleClearRaces}>Select/Clear All</button>
+                <RaceList selectedRaces={selectedRaces} clickHandler={raceSelector} />
 
-            <h2>Classes</h2>
-            <button className="button" onClick={toggleClearClasses}>Select/Clear All</button>
-            <ClassList selectedClasses={selectedClasses} clickHandler={classesSelector} />
-
-            <br/>
-            <CharacterGeneratorButton selectedClasses={selectedClasses} selectedRaces={selectedRaces}/>
+                <h2>Classes</h2>
+                <button className="button noselect" onClick={toggleClearClasses}>Select/Clear All</button>
+                <ClassList selectedClasses={selectedClasses} clickHandler={classesSelector} />
+            </div>
         </div>
     )
 }

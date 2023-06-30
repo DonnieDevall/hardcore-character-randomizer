@@ -1,5 +1,5 @@
 import React from "react";
-import races from './races';
+import races from '../processing/races';
 
 function RaceList(props) {
     const alliance = ['human', 'dwarf', 'nightelf', 'gnome'];
@@ -16,11 +16,11 @@ function RaceList(props) {
         <div className="race-options">
 
             <ul className='race-list'>
-                {alliance.map((race) => <li><img src={races.alliance[race].gender.maleImg} alt={race} className={greyOut(race)} onClick={props.clickHandler}/></li>)}
+                {alliance.map((race) => <li><img src={races[race].gender.maleImg} alt={race} className={`noselect ${greyOut(race)}`} onClick={props.clickHandler}/></li>)}
             </ul>
 
             <ul className='race-list'>
-                {horde.map((race) => <li><img src={races.horde[race].gender.maleImg} alt={race} className={greyOut(race)} onClick={props.clickHandler}/></li>)}
+                {horde.map((race) => <li><img src={races[race].gender.maleImg} alt={race} className={`noselect ${greyOut(race)}`} onClick={props.clickHandler}/></li>)}
             </ul>
 
         </div>

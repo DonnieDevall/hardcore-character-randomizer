@@ -12,6 +12,7 @@ h1, h2 {
     align-self: center;
     justify-content: center;
     background-color: rgb(44, 44, 44);
+    border: 1px solid gold;
     color: gold;
     font-family: 'Cinzel', serif;
     padding: 10px 30px;
