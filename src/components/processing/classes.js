@@ -1,28 +1,28 @@
-const classes = {
+const classesObj = {
     hunter: {
-        img: '../assets/images/classes/Ui-charactercreate-classes_hunter.png'
+        img: '/images/classes/hunter.png'
     },
     mage: {
-        img: '../assets/images/classes/Ui-charactercreate-classes_mage.png'
+        img: '/images/classes/mage.png'
     },
     paladin: {
-        img: '../assets/images/classes/Ui-charactercreate-classes_paladin.png'
+        img: '/images/classes/paladin.png'
     },
     priest: {
-        img: '../assets/images/classes/Ui-charactercreate-classes_priest.png'
+        img: '/images/classes/priest.png'
     },
     rogue: {
-        img: '../assets/images/classes/Ui-charactercreate-classes_rogue.png'
+        img: '/images/classes/rogue.png'
     },
     shaman: {
-        img: '../assets/images/classes/Ui-charactercreate-classes_shaman.png'
+        img: '/images/classes/shaman.png'
     },
     warlock: {
-        img: '../assets/images/classes/Ui-charactercreate-classes_warlock.png'
+        img: '/images/classes/warlock.png'
     },
     warrior: {
-        img: '../assets/images/classes/Ui-charactercreate-classes_warrior.png'
+        img: '/images/classes/warrior.png'
     },
 }
 
-export default classes;
+export default classesObj;
