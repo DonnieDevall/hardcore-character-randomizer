@@ -59,6 +59,7 @@
   text-decoration-thickness: 1px;
   bottom: 0;
   text-align: center;
+  flex-direction: column;
 }
 
 .footer a {
