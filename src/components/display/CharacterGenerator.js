@@ -21,7 +21,7 @@ function CharacterGenerator(props) {
 
     return (
         <div className="generator-box">
-            {class_ ? <h2>Your Randomized Character : {race} {class_}</h2> : <h2>There are no legal classes selected</h2>}
+            {class_ ? <h2>Your Randomized Character: {race} {class_}</h2> : <h2>There are no legal classes selected</h2>}
         </div>
     )
     

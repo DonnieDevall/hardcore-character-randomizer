@@ -16,6 +16,19 @@ h1, h2, h3 {
     color: gold;
     font-family: 'Cinzel', serif;
     padding: 10px 30px;
+    margin: auto 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .main-body {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-body {
+        max-width: 600px;
+    }
 }
 
 .race-options, .class-options {
@@ -31,6 +44,8 @@ h1, h2, h3 {
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .race-list li, .class-list li {
@@ -53,7 +68,7 @@ h1, h2, h3 {
     background-color: rgb(44, 44, 44);
     border: 1px solid gold;
     cursor: pointer;
-    margin: 5px 10px;
+    margin: 15px 10px;
     font-family: 'Cinzel', serif;
     font-size: large;
 }
@@ -72,6 +87,8 @@ h1, h2, h3 {
 .generator-box {
     border: 1px solid gold;
     background-color: rgb(44, 44, 44);
+    margin: auto 10px 10px 10px;
+    padding: 5px;
 }
 
 /* FOR GREYSCALE LATER: -webkit-filter: grayscale(100%); */

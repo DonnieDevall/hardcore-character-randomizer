@@ -42,12 +42,8 @@ function CharacterOptions() {
         }
     }
     function clickHandler() {
-        if (selectedClasses.length === 0 || selectedRaces.length === 0) {
-            alert('Please select atleast one race and one class to randomize from.')
-        } else {
-            setCount((prev) => prev + 1)
-            setResultsRevealer(true)
-        }
+        setCount((prev) => prev + 1);
+        setResultsRevealer(true)
     }
 
     return (
@@ -57,11 +53,11 @@ function CharacterOptions() {
                 <h2>Pick which races and classes you would like to include</h2>
                 
                 <h2>Races</h2>
-                <button className="button noselect" onClick={toggleClearRaces}>Select/Clear All</button>
+                <button className="button noselect select-clear-button" onClick={toggleClearRaces}>Select/Clear All</button>
                 <RaceList selectedRaces={selectedRaces} clickHandler={raceSelector} />
 
                 <h2>Classes</h2>
-                <button className="button noselect" onClick={toggleClearClasses}>Select/Clear All</button>
+                <button className="button noselect select-clear-button" onClick={toggleClearClasses}>Select/Clear All</button>
                 <ClassList selectedClasses={selectedClasses} clickHandler={classesSelector} />
 
             </div>
