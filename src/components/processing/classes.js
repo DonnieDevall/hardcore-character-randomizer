@@ -1,4 +1,7 @@
 const classesObj = {
+    druid: {
+        img: '/images/classes/druid.png'
+    },
     hunter: {
         img: '/images/classes/hunter.png'
     },

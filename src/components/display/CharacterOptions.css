@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
-h1, h2 {
+h1, h2, h3 {
     color: gold;
     font-family: 'Cinzel', serif;
 }
@@ -66,6 +66,11 @@ h1, h2 {
 .button:hover {
     color: rgb(44, 44, 44);
     background-color: gold;
+}
+
+.generator-box {
+    border: 1px solid gold;
+    background-color: rgb(44, 44, 44);
 }
 
 /* FOR GREYSCALE LATER: -webkit-filter: grayscale(100%); */
